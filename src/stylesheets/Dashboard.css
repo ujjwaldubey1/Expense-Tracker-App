@@ -1,0 +1,102 @@
+.dashboard-container {
+    gap: 15px;
+    width: 90%;
+    min-height: 100vh;
+    padding-block: 15px;
+    position: relative;
+
+    & .add-expense.btn {
+        position: absolute;
+        bottom: 55px;
+        right: 0px;
+    }
+}
+
+.summary-container {
+    gap: 8px;
+    width: 100%;
+
+    & .summaries {
+        gap: 10px;
+
+        & .summary {
+            box-shadow: var(--purple-shadow);
+            background-color: var(--main-purple-color);
+            color: var(--main-light-color);
+            padding: 17px 20px;
+            border-radius: var(--main-br);
+            font-size: 1.9rem;
+
+            & .title {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.expense-container {
+    gap: 8px;
+    width: 100%;
+    color: var(--main-light-color);
+
+    & .header {
+        justify-content: space-between;
+        align-items: center;
+
+        & .budget-indicator {
+            font-size: 1.4rem;
+            padding: var(--main-pd);
+            border-radius: var(--main-br);
+            color: var(--main-light-color);
+            background-color: #1c7c1c;
+            box-shadow: 4px 4px 8px rgba(0, 50, 0, 0.5),
+                -4px -4px 8px rgba(0, 150, 0, 0.3);
+
+            &.mid {
+                background: #b0a120;
+                box-shadow: 4px 4px 8px rgba(50, 50, 0, 0.5),
+                    -4px -4px 8px rgba(150, 150, 0, 0.3);
+            }
+
+            &.low {
+                background-color: #b71c1c;
+                box-shadow: 4px 4px 8px rgba(50, 0, 0, 0.5),
+                    -4px -4px 8px rgba(150, 0, 0, 0.3);
+            }
+
+            & .amount {
+                font-weight: 600;
+            }
+        }
+    }
+
+    & .expenses {
+        gap: 10px;
+
+        & .expense-wrapper {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--main-pd);
+            border-radius: var(--main-br);
+            box-shadow: var(--shadow);
+            gap: 12px;
+
+            & .expense {
+                /* width: 100%; */
+                justify-content: space-between;
+                align-items: center;
+                flex: 1;
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+
+            & .expense-action {
+                /* width: 100%; */
+                justify-content: space-between;
+                align-items: center;
+                gap: 7px;
+            }
+        }
+    }
+}

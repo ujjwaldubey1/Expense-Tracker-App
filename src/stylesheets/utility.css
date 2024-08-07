@@ -1,0 +1,41 @@
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.all-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: var(--main-pd);
+    border-radius: var(--main-br);
+    font-weight: 600;
+    font-size: 1.55rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+.main-btn {
+    box-shadow: var(--purple-shadow);
+    background-color: var(--main-purple-color);
+    color: var(--main-light-color);
+}
+.main-btn:is(:hover, :active) {
+    background-color: var(--secondary-purple-color);
+}
+.secondary-btn {
+    box-shadow: var(--purple-shadow);
+    background-color: var(--secondary-purple-color);
+    color: var(--main-light-color);
+}
+.secondary-btn:is(:hover, :active) {
+    background-color: var(--main-purple-color);
+}
+
+& .sub-heading {
+    color: var(--main-light-color);
+    font-size: 2.25rem;
+}

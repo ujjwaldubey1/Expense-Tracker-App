@@ -1,0 +1,14 @@
+.form-container {
+    position: relative;
+
+    & .close {
+        position: absolute;
+        right: -12px;
+        top: -12px;
+        color: var(--main-light-color);
+        padding-block: 8px;
+        background-color: #b71c1c;
+        box-shadow: 4px 4px 8px rgba(50, 0, 0, 0.5),
+            -4px -4px 8px rgba(150, 0, 0, 0.3);
+    }
+}

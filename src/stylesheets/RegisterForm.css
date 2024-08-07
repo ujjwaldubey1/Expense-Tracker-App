@@ -1,0 +1,22 @@
+.form-container {
+    padding-block: 25px;
+    min-width: 35%;
+    max-width: 97%;
+    gap: 10px;
+
+    /* & .sub-heading {
+        text-align: center;
+    } */
+
+    & form {
+        gap: 11px;
+        & label {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--main-light-color);
+        }
+        & .btn {
+            width: 100%;
+        }
+    }
+}

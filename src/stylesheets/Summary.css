@@ -1,0 +1,15 @@
+.summary {
+    position: relative;
+
+    .btn.edit {
+        position: absolute;
+        right: -20px;
+        top: -15px;
+        background-color: var(--main-light-color);
+        padding: 8px;
+
+        & svg {
+            fill: #000;
+        }
+    }
+}
